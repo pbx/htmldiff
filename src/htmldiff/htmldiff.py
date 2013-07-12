@@ -130,16 +130,14 @@ class HTMLMatcher(SequenceMatcher):
                 self,
                 isJunk,
                 source1,
-                source2,
-                False
+                source2
             )
         if accurate_mode == True:
             SequenceMatcher.__init__(
                 self,
                 False,
                 source1,
-                source2,
-                False
+                source2
             )
 
     def set_seq1(self, a):
